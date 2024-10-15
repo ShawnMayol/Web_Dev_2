@@ -7,9 +7,9 @@ Sample Response (Success):
   "data": {
     "0": {
       "id": 10,
-      "firstName": "ChizB",
-      "lastName": "Beloy",
-      "email": "chizray@gmail.com",
+      "firstName": "Ex",
+      "lastName": "Ample",
+      "email": "example@gmail.com",
       "number": "09123456789"
     }
     "count": 1
@@ -24,7 +24,7 @@ Data Needed:
 •	lname
 •	emailAdd
 •	contactNum
-Sample Request: http://..../add.php?fname=Chiz&lname=Beloy&emailAdd=chiz%40gmail.com&contactNum=09876543212
+Sample Request: http://..../add.php?fname=Ex&lname=Ample&emailAdd=chiz%40gmail.com&contactNum=09876543212
 Sample Response (Success):
 {
   "status": 200,
@@ -42,7 +42,7 @@ Data Needed:
 •	emailAdd
 •	contactNum
 •	curEmail
-Sample Request: http://..../edit.php?id=8&fname=Chiz%20Ray&lname=Beloy&emailAdd=chiz%40gmail.com&contactNum=09999999999&curEmail=chiz%40gmail.com
+Sample Request: http://..../edit.php?id=8&fname=Ex%20Ray&lname=Ample&emailAdd=Ex%40gmail.com&contactNum=09999999999&curEmail=Ex%40gmail.com
 Sample Response (Success):
 {
   "status": 200,

@@ -1,0 +1,17 @@
+body {
+    background-color: #343a40;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.table-container {
+    width: 80%;
+    margin-top: 5vh;
+}
+
+.modal-content {
+    background-color: #3e3f41;
+    color: #ffffff;
+}

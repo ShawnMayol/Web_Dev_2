@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .inputBG {
+    background-color: Red;
+    color: yellow;
+    }
+    .inputHover:hover {
+    background-color: gray;
+    color: black;
+    }
+</style>
+    
+<body>
+    <div>
+        <ul>
+            <li id="one"><em>fresh</em> figs</li>
+            <li id="two">pine nuts</li>
+            <li id="three">honey</li>
+            <li id="four">balsamic vinegar</li>
+        </ul>
+            <p id="p1">TEXT1</p>
+            <p id="p2">TEXT2</p>
+            <p class="pClass">REPLACE THIS TEXT</p>
+            <p id="removeMe">Remove Me</p>
+    </div>
+    
+    <input id="inputID" class="inputBG inputHover" type="text"
+    placeholder="Input here" value="This is a text"/>
+    <button onclick="attributesFunction()">Click Me</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        console.log($('li:first').text());
+        $('p.pClass')[0].replaceWith("BLABLA3");
+        $('p#removeMe').remove();
+        $('ul').prepend('<li id="prepend">PREPEND</li>');
+        $('ul').append('<li id="append">APPEND</li>');
+
+        function attributesFunction(){
+            var inputField = $("#inputID");
+        }
+        
+        console.log(inputField.attr("type"));//get
+
+    </script>
+
+</body>
+</html>
